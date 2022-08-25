@@ -110,7 +110,7 @@ main {
     width: 375px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 600px) {
 
     body {
         background: url(images/bg-desktop.svg) top no-repeat;
