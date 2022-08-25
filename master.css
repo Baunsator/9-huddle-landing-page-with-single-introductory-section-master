@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    box-sizing: border-box;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(images/bg-mobile.svg) top no-repeat;
+    background-color: var(--Violet);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+footer {
+    width: 375px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+main {
+    width: 375px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--Soft-Magenta);
+}
+
+.topleft {
+    display: flex;
+    flex-flow: column;
+    padding: 35px;
+}
+
+.logo {
+    width: 40%;
+}
+
+.mockup {
+    align-self: center;
+    margin-top: 55px;
+    width: 100%;
+}
+
+.bottomright {
+    color: #FFFFFF;
+    padding: 35px;
+}
+
+.button {
+  align-items: center;
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  color: var(--Violet);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Popins', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  justify-content: center;
+  height: auto;
+  margin-top: 25px;
+  width: 65%;
+  line-height: 1.5;
+  padding: 6px 20px;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+
+.media {
+    border: solid 2px #FFFFFF;
+    border-radius: 50%;
+    margin: 30px 5px 0 5px;
+    width: 8%;
+}
+
+.socials {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width: 375px;
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        background: url(images/bg-desktop.svg) top no-repeat;
+        background-color: var(--Violet);
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1440px;
+    }
+
+    .topleft {
+        height: 700px;
+        width: 58%;
+        padding: 60px 0 0 70px;
+    }
+    
+    .logo {
+        height: 7%;
+    }
+    
+    .mockup {
+        width: auto;
+        height: 80%;
+        margin-top: 90px;
+        align-self: flex-end;
+    }
+
+    h1 {
+        padding-right: 190px;
+    }
+
+    p {
+        padding-right: 70px;
+    }
+
+    .bottomright {
+        text-align: left;
+        width: 42%;
+    }
+
+    .button {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 15px 20px;
+        width: 180px;
+    }
+
+    footer {
+        height: 100px;
+        width: 100%;
+    }
+
+    .socials {
+        width: 1440px;
+        padding-right: 45px;
+        justify-content: end;
+    }
+
+    .media {
+        width: 2.5%;
+    }
+
+
+
+}
